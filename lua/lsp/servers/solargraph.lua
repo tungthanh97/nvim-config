@@ -11,10 +11,7 @@ if ok then
     end
 end
 
-M.filetypes = {
-  "ruby",
-  "eruby"
-}
+
 
 -- Settings
 

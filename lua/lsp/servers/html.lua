@@ -11,7 +11,10 @@ if ok then
     end
 end
 
-
+M.filetypes = {
+  "html",
+  "eruby"
+}
 
 -- Settings
 

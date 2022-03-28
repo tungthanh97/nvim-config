@@ -46,7 +46,7 @@ lsp_installer.on_server_ready(function(server)
     end
 
     if server.name == "html" then
-
+       opts.filetypes = require('lsp.servers.html').filetypes
       opts.capabilities = require('lsp.servers.html').capabilities
       opts.settings = require('lsp.servers.html').settings
     end
@@ -64,9 +64,7 @@ lsp_installer.on_server_ready(function(server)
       opts.init_options = require('lsp.servers.vue2').init_options
     end
     
-     if server.name == "solargraph" then
-      opts.filetypes = require('lsp.servers.solargraph').filetypes
-    end
+     
 
 
     -- (How to) Customize the options passed to the server
